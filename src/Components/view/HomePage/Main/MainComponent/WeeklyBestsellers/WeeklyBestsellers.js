@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import ProductCard from "./ProductCard";
 import {weeklyBestsellersBooks} from "./weeklyBestsellersData";
 
-const WeeklyBestsellers = () => {
+const WeeklyBestsellers = ({title,setTitle}) => {
     return (
         <Box sx={{
             width: '70rem',
@@ -18,7 +18,7 @@ const WeeklyBestsellers = () => {
             alignContent: 'center',
             flexDirection:'column'
         }}>
-            <h4>پر فروش های هفته</h4>
+            <h4>{title}</h4>
 
             <Box sx={{
                 width: '70rem',

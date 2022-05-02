@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 
 export default function ProductCard({item}) {
     return (
-        <Box sx={{marginBottom: '155px'}}>
+        <Box >
             <Card elevation={0} sx={{
                 width: '255px',
                 height: '355px',

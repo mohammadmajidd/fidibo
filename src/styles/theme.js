@@ -10,6 +10,7 @@ import IranSans600 from "../fonts/woff2/IRANSansWeb_Black.woff2";
 // Create a theme instance.
 const theme = createTheme({
     direction: 'rtl',
+    backgroundColor: 'dimgray',
     components: {
         MuiCssBaseline: {
             styleOverrides:

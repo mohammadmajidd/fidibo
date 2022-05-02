@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import HomePage from "./Components/view/HomePage/HomePage";
+import Typography from "@mui/material/Typography";
+import './styles/global.css'
+import theme from "./styles/theme";
+import {CssBaseline, ThemeProvider} from "@mui/material";
+const App = () => {
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            <HomePage/>
+        </ThemeProvider>
+    );
+};
 
 export default App;
